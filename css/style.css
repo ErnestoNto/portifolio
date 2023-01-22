@@ -23,6 +23,7 @@ body{
     padding: 10px;
     color: #fafafa;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
 }
@@ -51,6 +52,7 @@ body{
 }
 
 .home{
+    padding: 40px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -98,51 +100,23 @@ body{
 
 /* Sobre */
 
-.sobre{
+#sobre{
     margin-top: 10px;
     height: 100vh;
+    padding: 50px;
+    color: #fafafa;
     width: 100%;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 10px;
+    margin-bottom: 10px;
 }
 
-.controls button{
-    border: none;
-    font-size: 1.3rem;
-    padding: 5px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: all .5s ease-in-out;
-}
-
-.controls button:hover{
-    background-color: #CF4D6F;
-    color: #fafafa;
-}
-
-.text-sobre{
-    border: 1px solid #fff;
-    padding: 10px;
-    width: 100%;
-    max-width: 300px;
-}
-
-.active{
-    background-color: #0ff;
-}
-
-/* Sobre */
-
-.sobre{
-    padding: 10px;
-    color: #fafafa;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 20px;
+@media (max-width: 400px){
+    .sobre-text p{
+        font-size: .7rem;
+    }
 }
 
 .sobre img{
@@ -157,7 +131,7 @@ body{
 }
 
 .sobre-text{
-    width: 60%;
+    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -188,6 +162,7 @@ body{
 
 .item{
     margin-bottom: 10px;
+    padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -195,7 +170,8 @@ body{
 }
 
 .item img{
-    width: 600px;
+    width: 100%;
+    max-width: 600px;
     height: 200px;
     box-shadow: -12px 0 0 #44CFCB;
 }
